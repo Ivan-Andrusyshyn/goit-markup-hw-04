@@ -92,6 +92,22 @@ display: flex;
 .cursor:focus {
 color: var(--color-blue);
 }
+
+.header-item {
+    fill: currentColor;
+}
+.mail {
+    width: 16px;
+    height: 12px
+}
+
+.phone {
+    width: 10px;
+    height: 16px
+}
+.header-mail{}
+
+
 .current {
     color: var(--color-blue);
 }
@@ -111,14 +127,16 @@ color: var(--color-blue);
     line-height: calc(16/14);
     text-decoration: none;
     color: var(--color-gray);
+   display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.header-mail {
-   
-}
+.header-phone {
 
-.header-phone {}
+}
 
 /*<------HERO------>*/
 .hero {
@@ -158,6 +176,8 @@ color: var(--color-blue);
     margin: 0 auto;
     border: 0;
     min-width: 216px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -389,6 +409,11 @@ address {
     background-color:rgba(255, 255, 255, 0.1); ;
     width: 44px;
     height: 44px;
+    
+}
+.padding-item {
+    padding-top:18px ;
+    padding-bottom: 12px;
 }
 .social-footer {
     gap: 10px;
@@ -440,20 +465,31 @@ address {
 }
 .filter-btn:hover,
 .filter-btn:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+     0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: var(--color-blue);
     color: var(--color-white);
 }
 
 /*<------PROJECTS------>*/
-
+.project-item {
+    max-width: 370px;
+    max-height: 404px;
+}
 .projects-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-   
+    gap: 30px; 
 }
-.project-item {
-   
+.project-link {
+    width: 100%;
+    display: block;
+}
+.project-link:hover,
+.project-link:focus{
+    border: 1px solid #EEEEEE;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-wrap {
     padding-bottom: 20px;
