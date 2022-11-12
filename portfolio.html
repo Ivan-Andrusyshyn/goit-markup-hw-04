@@ -18,21 +18,35 @@
 </head>
 <body>
 <header class="header header-line">
-    <div class="container header-container ">
+    <div class="container header-container">
         <nav class="header-nav">
             <a href="/" class="logo"><span>Web</span>Studio</a>
 
             <ul class="header-links">
                 <li class="header-link"><a href="./index.html" class="link cursor">Студія</a></li>
-                <li class="header-link"><a href="./portfolio.html" class="link cursor current"> Портфоліо</a></li>
+                <li class="header-link"><a href="#" class="link cursor current"> Портфоліо</a></li>
                 <li class="header-link"><a href="#" class="link cursor">Контакти</a></li>
             </ul>
 
         </nav>
         <ul class="header-contacts">
-            <li class="header-mail"><a href="mailto:info@devstudio.com" class="mail-link cursor">info@devstudio.com</a>
+
+            <li class="header-mail">
+                <a href="mailto:info@devstudio.com" class="mail-link cursor">
+                    <svg class="header-item mail">
+                        <use href="./images/icons.svg#icon-email-heder" width="16px" height="12px">
+                        </use>
+                    </svg>
+                    <div> info@devstudio.com</div>
+                </a>
             </li>
-            <li class="header-phone"><a href="tel:+380961111111" class="phone-link cursor">+38 096 111 11 11</a></li>
+            <li class="header-phone">
+                <a href="tel:+380961111111" class="phone-link cursor">
+                    <svg class="header-item phone">
+                        <use href="./images/icons.svg#icon-smartphone" width="10px" height="16px">
+                        </use>
+                    </svg>+38 096 111 11 11</a>
+            </li>
         </ul>
     </div>
 </header>
