@@ -123,9 +123,16 @@ color: var(--color-blue);
 /*<------HERO------>*/
 .hero {
     color: var(--color-white);
-    background-color: #2F303A;
+    background-image: linear-gradient(
+     rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)), url(../images/Img-hero.png);
     padding-top:200px ;
     padding-bottom:200px ;
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    background-size: cover;
 }
 
 .hero-title {
@@ -169,6 +176,7 @@ color: var(--color-blue);
      clip-path: inset(50%);
      margin: -1px;
  }
+ 
 .benefits-section {
      padding-top: 94px;
     padding-bottom: 94px;
@@ -182,11 +190,48 @@ color: var(--color-blue);
     letter-spacing: 0.03em;
     
 }
+.benefit-icon {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.benefit-antena::before {
+    content:"" ;
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/antenna\ 1\ \(1\).svg);
+}
+.benefit-clock::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/clock\ 1\ \(1\).svg);
+}
+.benefit-diagram::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/diagram\ 1\ \(1\).svg);
+}
+.benefit-astronaut::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/astronaut\ 1\ \(1\).svg);
+}
 
 .title-benefit {
     margin-bottom: 10px;
     font-size: 14px;
-    line-height: calc(16/14);
+    line-height: calc(16/14); 
 }
 
 .subtitle-benefit {
@@ -228,6 +273,7 @@ padding-top: 94px;
 padding-bottom: 94px;
 }
 .team-wraper {
+    border-radius: 0px 0px 4px 4px;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #ffffff;
@@ -240,7 +286,16 @@ padding-bottom: 94px;
     line-height: 1.16;
     letter-spacing: 0.03em;
 }
-
+.social-links {
+    gap: 22px;
+    display: flex;
+    justify-content: center;
+}
+.social-link-item {
+ fill: #AFB1B8;
+width: 20px;
+height: 20px;
+}
 .team-items {
     display: flex;
     gap: 30px;
@@ -251,7 +306,11 @@ padding-bottom: 94px;
     width: calc(100%-90px / 4);
 }
 .team-item {
+    border-radius: 0px 0px 4px 4px;
     text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-item img {
 }
@@ -262,18 +321,26 @@ padding-bottom: 94px;
     font-weight: 500;
 }
 .name-subtitle {
-color: var(--color-gray);    
+color: var(--color-gray); 
+margin-bottom: 28px;
 }
 
 /*<------FOOTER------>*/
 .footer-contacts {
+   
     padding-bottom: 60px;
     padding-top: 60px;
     letter-spacing: 0.03em;
     background-color: var(--color-dark);
 }
 address {
+    width: 231px;
+    display: block;
     font-style: normal;
+}
+.footer-wraper {
+    gap: 70px;
+ display: flex;
 }
 .logo-footer {
     display: block;
@@ -285,6 +352,7 @@ address {
 }
 
 .footer-item {
+    width: 100%;
     margin-bottom: 9px;
 }
 .footer-items {
@@ -301,6 +369,37 @@ address {
 
 .footer-phone {
     color: var(--color-grayfooter);
+}
+.social-div {
+    margin-top: 12px;
+}
+.social-uptitle {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: calc(16.41/14);
+    margin-bottom: 20px;
+}
+.social-item {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+     border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1); ;
+    width: 44px;
+    height: 44px;
+}
+.social-footer {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link-footer {
+    fill: #ffffff;
+    width: 20px;
+    height: 20px;
 }
 
    /*<------PORTFOLIO------>*/
