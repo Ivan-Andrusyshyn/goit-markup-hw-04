@@ -307,14 +307,43 @@ padding-bottom: 94px;
     letter-spacing: 0.03em;
 }
 .social-links {
-    gap: 22px;
+    gap: 10px;
     display: flex;
     justify-content: center;
 }
+.social-list {
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.social-link {
+    width: 100%;
+    height:100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+    border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus  {
+    background-color: #2196F3;
+}
 .social-link-item {
  fill: #AFB1B8;
-width: 20px;
-height: 20px;
+}
+.social-link:hover .social-link-item {
+    fill: #ffffff;
+}
+.social-link-item:hover,
+.social-link-item:focus {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
 }
 .team-items {
     display: flex;
@@ -326,6 +355,8 @@ height: 20px;
     width: calc(100%-90px / 4);
 }
 .team-item {
+    min-width: 270px;
+    min-height: 428px;
     border-radius: 0px 0px 4px 4px;
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -342,9 +373,49 @@ height: 20px;
 }
 .name-subtitle {
 color: var(--color-gray); 
-margin-bottom: 28px;
+margin-bottom: 16px;
+}
+/*-------OUR CLIENTS-----*/
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.client-items {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
 }
 
+.client-item {
+    min-width: 170px;
+    min-height: 92px;
+   
+}
+.client-link:hover, 
+.client-link:focus{ 
+     border: 1px solid var(--color-blue);
+    fill: var(--color-blue);
+}
+.client-link:hover .client-link-item {
+fill: var(--color-blue);
+}
+.client-link-item:hover,
+.client-link-item:focus {
+fill: #2196F3;
+}
+.client-link {
+border: 1px solid #AFB1B8;
+width: 100%;
+height: 100%;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+}
+
+.client-link-item {
+fill: #AFB1B8;
+}
 /*<------FOOTER------>*/
 .footer-contacts {
    
@@ -401,7 +472,7 @@ address {
     line-height: calc(16.41/14);
     margin-bottom: 20px;
 }
-.social-item {
+.footer-link {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -410,6 +481,23 @@ address {
     width: 44px;
     height: 44px;
     
+}
+.footer-link:hover,
+.footer-link:focus {
+    background-color: #2196F3;
+}
+
+
+
+.social-link:hover .social-link-footer {
+    fill: #ffffff;
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
 }
 .padding-item {
     padding-top:18px ;
