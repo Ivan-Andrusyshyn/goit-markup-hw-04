@@ -211,6 +211,7 @@ color: var(--color-blue);
     
 }
 .benefit-icon {
+    border-radius: 4px;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
@@ -339,6 +340,9 @@ padding-bottom: 94px;
 .social-link:hover .social-link-item {
     fill: #ffffff;
 }
+.social-link:focus   .social-link-item {
+    fill: #ffffff;
+    }
 .social-link-item:hover,
 .social-link-item:focus {
     width: 20px;
@@ -389,21 +393,22 @@ margin-bottom: 16px;
 .client-item {
     min-width: 170px;
     min-height: 92px;
-   
 }
-.client-link:hover, 
-.client-link:focus{ 
-     border: 1px solid var(--color-blue);
-    fill: var(--color-blue);
-}
+.client-link:hover, .client-link:focus { 
+        border: 1px solid var(--color-blue);
+        fill: var(--color-blue);
+    }
+ .client-link:focus {
+      border: 1px solid #2196F3;
+         }
 .client-link:hover .client-link-item {
 fill: var(--color-blue);
 }
-.client-link-item:hover,
-.client-link-item:focus {
-fill: #2196F3;
+.client-link:focus .client-link-item {
+    fill: var(--color-blue);
 }
 .client-link {
+    border-radius: 4px;
 border: 1px solid #AFB1B8;
 width: 100%;
 height: 100%;
@@ -412,13 +417,11 @@ display: flex;
     justify-content: center;
     color: #AFB1B8;
 }
-
 .client-link-item {
 fill: #AFB1B8;
 }
 /*<------FOOTER------>*/
-.footer-contacts {
-   
+.footer-contacts { 
     padding-bottom: 60px;
     padding-top: 60px;
     letter-spacing: 0.03em;
@@ -479,29 +482,11 @@ address {
      border-radius: 50%;
     background-color:rgba(255, 255, 255, 0.1); ;
     width: 44px;
-    height: 44px;
-    
+     height: 44px;    
 }
 .footer-link:hover,
 .footer-link:focus {
     background-color: #2196F3;
-}
-
-
-
-.social-link:hover .social-link-footer {
-    fill: #ffffff;
-}
-
-.social-link-footer:hover,
-.social-link-footer:focus {
-    width: 20px;
-    height: 20px;
-    fill: #ffffff;
-}
-.padding-item {
-    padding-top:18px ;
-    padding-bottom: 12px;
 }
 .social-footer {
     gap: 10px;
@@ -575,7 +560,6 @@ address {
 }
 .project-link:hover,
 .project-link:focus{
-    border: 1px solid #EEEEEE;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
          1px 4px 6px rgba(0, 0, 0, 0.16);
 }
